@@ -1,4 +1,6 @@
 # SFDX App: Agile Board
+[![Deploy](https://deploy-to-sfdx.com/dist/assets/images/DeployToSFDX.svg)](https://deploy-to-sfdx.com/)
+
 An implementation of HTML5 drag-and-drop for Lightning Web Components.
 
 ## Features
