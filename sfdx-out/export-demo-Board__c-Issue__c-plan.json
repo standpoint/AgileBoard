@@ -1,0 +1,18 @@
+[
+    {
+        "sobject": "Board__c",
+        "saveRefs": true,
+        "resolveRefs": false,
+        "files": [
+            "export-demo-Board__cs.json"
+        ]
+    },
+    {
+        "sobject": "Issue__c",
+        "saveRefs": true,
+        "resolveRefs": true,
+        "files": [
+            "export-demo-Issue__cs.json"
+        ]
+    }
+]

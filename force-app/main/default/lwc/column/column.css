@@ -1,0 +1,29 @@
+section.full-height {
+    height: -webkit-fill-available;
+}
+
+.drag-container {
+    transform: rotate(20deg);
+}
+
+.dropzone {
+    background-color: rgb(245, 228, 198);
+}
+
+hr {
+    margin: 0.25rem;
+    border-color: rgb(251, 195, 99);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 2px 4px; 
+}
+
+.drop-placeholder {
+    margin: -3rem -1rem 3rem; 
+    position: absolute; 
+    height: 6rem;
+}
+
+.drop-placeholder-last {
+    margin: -3rem -1rem 0; 
+    position: absolute; 
+    height: -webkit-fill-available;
+}

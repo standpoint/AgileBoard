@@ -1,0 +1,10 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+
+    <aura:attribute name="subscription" type="Map" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+
+    <c:auraPubsub aura:id="pubsub"/>
+    <lightning:empApi aura:id="empApi"/>
+
+</aura:component>	

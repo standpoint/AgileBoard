@@ -1,0 +1,35 @@
+<template>
+    <div class={dropzone} style={columnStyle}>
+        <header>
+            {label}
+        </header>
+        <div>
+            <section class="full-height slds-scrollable_y">
+
+                <template for:each={cards} for:item="card" for:index="index">
+                    <div key={card.id}>
+
+                        <div class={dropzoneReorder}>
+                            <div style={columnStyle} class="drop-placeholder" ondrop={drop} ondragover={allowDrop} data-column-name={name} data-card-index={index}></div>
+                        </div>
+                        <div class={dropzoneReorder}>
+                            <hr class="card-reorder"></hr>
+                        </div>
+
+                        <div draggable="true" ondragstart={drag} ondragend={dragEnd} data-card-id={card.id} data-column-name={name} class="slds-p-vertical_xx-small">
+                            <c-tile card={card} drag={drag} data-card-id={card.id} data-column-name={name}></c-tile>
+                        </div>
+                    </div>
+                </template>
+
+                <div class={dropzoneReorder}>
+                    <div style={columnStyle} class="drop-placeholder-last" ondrop={drop} ondragover={allowDrop} data-column-name={name} data-card-index={cards.length}></div>
+                </div>
+                <div class={dropzoneReorder}>
+                    <hr class="card-reorder"></hr>
+                </div>
+
+            </section>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Hold info about sorted issues on the board</description>
+    <label>Issue Sort Order</label>
+    <pluralLabel>Issue Sort Orders</pluralLabel>
+    <visibility>Protected</visibility>
+</CustomObject>

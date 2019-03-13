@@ -1,0 +1,11 @@
+.tile-bg {
+    background-color: rgb(245, 255, 250);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 2px 4px;
+}
+
+.tile-body {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin-left: -2.5rem; 
+    min-width: calc(100% + 2.5rem);
+}

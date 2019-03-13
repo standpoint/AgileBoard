@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <description>Board Name: Kanban, Board Id: a000S000002WxxhQAC</description>
+    <label>Kanban</label>
+    <protected>false</protected>
+    <values>
+        <field>Board_Id__c</field>
+        <value xsi:type="xsd:string">a000S000002WxxhQAC</value>
+    </values>
+    <values>
+        <field>Issue_Ids__c</field>
+        <value xsi:type="xsd:string">{&quot;Todo&quot;:[&quot;a010S000003JmEMQA0&quot;,&quot;a010S000003JmEmQAK&quot;],&quot;In progress&quot;:[&quot;a010S000003JmENQA0&quot;,&quot;a010S000003JmEWQA0&quot;,&quot;a010S000003JmEcQAK&quot;],&quot;Developer test&quot;:[&quot;a010S000003JmElQAK&quot;],&quot;QA&quot;:[&quot;a010S000003JmEgQAK&quot;,&quot;a010S000003JmEbQAK&quot;],&quot;Done&quot;:[&quot;a010S000003JmERQA0&quot;]}</value>
+    </values>
+    <values>
+        <field>LastModifiedDate__c</field>
+        <value xsi:type="xsd:dateTime">2019-03-11T11:29:28.000Z</value>
+    </values>
+</CustomMetadata>

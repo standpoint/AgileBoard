@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>User_story</fullName>
+    <active>true</active>
+    <label>User story</label>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Developer test</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Done</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Todo</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+</RecordType>

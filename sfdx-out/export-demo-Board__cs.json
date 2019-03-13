@@ -1,0 +1,12 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Board__c",
+                "referenceId": "Board__cRef1"
+            },
+            "Name": "Kanban",
+            "Available_Statuses__c": "Todo;In progress;Developer test;QA;Done"
+        }
+    ]
+}

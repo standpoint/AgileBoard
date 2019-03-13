@@ -1,0 +1,10 @@
+<template>
+    <div class="slds-box tile-bg" ondragstart={drag}>
+        <lightning-tile label={card.title} href={cardRef} type="media">
+            <lightning-icon slot="media" icon-name="standard:groups"></lightning-icon>
+            <p class="slds-truncate slds-border_top slds-m-top_large slds-p-top_x-small tile-body" title={card.body}>
+                {card.body}
+            </p>
+        </lightning-tile>
+    </div>
+</template>
