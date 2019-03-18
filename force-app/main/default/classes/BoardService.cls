@@ -56,6 +56,18 @@ public inherited sharing class BoardService {
                 ));
     }
 
+    public void updateSortOrder(List<Issue__c> issues) {
+        EventBusService ebs = new EventBusService();
+        for (Issue__c iss : issues) {
+            if (String.isNotEmpty(iss.Board__c)) {
+                ebs.add(new Board_Updated__e(Board_Id__c = iss.Board__c, IsAnonymous__c = true));
+            }
+        }
+        if (!ebs.isPoolEmpty()) {
+            ebs.publish();
+        }
+    }
+
     private Board initBoard(String boardId, Map<String, Column> columnByName) {
         Board result = new Board();
         for (Board__c board : [SELECT Id, Name, Available_Statuses__c FROM Board__c WHERE Id = :boardId]) {
