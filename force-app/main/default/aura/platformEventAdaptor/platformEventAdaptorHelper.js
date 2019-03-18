@@ -8,13 +8,15 @@
         empApi.subscribe(channel, replayId, $A.getCallback(eventReceived => {
             // Process event (this is called each time we receive an event)
             console.log('Received event ', JSON.stringify(eventReceived));
-            if (eventReceived && eventReceived.data && eventReceived.data.payload 
-                && eventReceived.data.payload.Board_Id__c 
-                && eventReceived.data.payload.CreatedById !== $A.get('$SObjectType.CurrentUser.Id')) {
-                let message = eventReceived.data.payload.Board_Id__c;
-                let pubsub = component.find('pubsub');
-                pubsub.fireEvent('boardUpdated', message);
-            }
+            if (eventReceived && eventReceived.data && eventReceived.data.payload) {
+                let payload = eventReceived.data.payload;
+                let currentUserId = $A.get('$SObjectType.CurrentUser.Id');
+                if (payload.Board_Id__c && (payload.IsAnonymous__c || payload.CreatedById !== currentUserId)) {
+                    let message = eventReceived.data.payload.Board_Id__c;
+                    let pubsub = component.find('pubsub');
+                    pubsub.fireEvent('boardUpdated', message);
+                }
+            } 
         }))
         .then(subscription => {
             // Confirm that we have subscribed to the event channel.
